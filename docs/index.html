@@ -3,6 +3,7 @@
 <head>
     <title>Pollock Lab</title>
     <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton"> -->
+    <link rel="icon" type="image/png" href="filesfav.png" sizes="16x16"/>
     <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 
@@ -10,30 +11,29 @@
 <body>
     <h1>Pollock Lab</h1>
 
-    <h2>Choose your canvas size, Master</h2>
-    <form id="sizePicker">
-        Height [max:62]:
-        <input type="number" id="inputHeight" name="height" min="1" max="120" value="62">
-        Width [max:150]:
-        <input type="number" id="inputWidth" name="width" min="1" max="150" value="150">
-        <input type="submit">
-    </form>
+        <h2>Choose your canvas size, Master</h2>
+        <form id="sizePicker">
+            Height [max:62]:
+            <input type="number" id="inputHeight" name="height" min="1" max="120" value="62">
+            Width [max:150]:
+            <input type="number" id="inputWidth" name="width" min="1" max="150" value="150">
+            <input type="submit">
+        </form>
 
-    <h2>Pick some inks or use one of your usual</h2>
-    <input type="color" id="colorPicker">
-    <div class="color-palette">
-        <h3>Use System Picker to add these colors:</h3>
-        <img id="picker-icon" src="files/picker-s.png" alt="">
-        <div class="colors"></div>
-        <div class="colors"></div>
-        <div class="colors"></div>
-        <div class="colors"></div>        
-        <div class="colors"></div>        
-        <div class="colors"></div>        
-        <div class="colors"></div>        
-    </div>
-    
+        <h2>Now pick some inks or find Picker here</h2>
+        <input type="color" id="colorPicker">
 
+        <h2>Use Picker to use your usual colors</h2>
+        <div class="color-palette">
+            <img id="picker-icon" src="files/picker-s.png" alt="">
+            <div class="colors"></div>
+            <div class="colors"></div>
+            <div class="colors"></div>
+            <div class="colors"></div>        
+            <div class="colors"></div>        
+            <div class="colors"></div>        
+            <div class="colors"></div>        
+        </div>
 
     <!--   <h2>Your Canvas Is Here</h2> -->
     <table id="pixelCanvas"></table>
